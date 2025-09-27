@@ -1,1 +1,232 @@
-# psicologa.grace.vasquez
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grace Vásquez - Psicóloga</title>
+  <meta name="description" content="Psicóloga - Atención presencial y virtual. Terapias para adultos, adolescentes y parejas." />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: "Poppins", Arial, sans-serif;
+      color:#222;
+      background:#fafafa;
+      line-height:1.5;
+    }
+
+    /* HEADER */
+    .topbar{
+      background:#fff;
+      border-bottom:1px solid #eee;
+      padding:14px 24px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    /* ⬇️ LOGO más grande */
+    .brand img{height:70px;}
+    .brand .tag{font-size:14px;color:#666}
+
+    .contact-cta{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .phone{
+      font-weight:700;
+      color:#2a2a2a;
+      font-size:16px;
+    }
+    .btn-primary{
+      background:#a56ea6;
+      color:#fff;
+      padding:10px 18px;
+      border-radius:26px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 4px 10px rgba(165,110,166,0.12);
+    }
+
+    /* NAV mejorado */
+    nav{
+      display:flex;
+      gap:30px;
+      justify-content:center;
+      margin:14px 0;
+    }
+    nav a{
+      text-decoration:none;
+      font-size:18px;
+      font-weight:600;
+      color:#4a2a4a;
+      transition:0.3s;
+    }
+    nav a:hover{
+      color:#a56ea6;
+      border-bottom:2px solid #a56ea6;
+      padding-bottom:4px;
+    }
+
+    /* HERO */
+    .hero{
+      display:flex;
+      gap:36px;
+      align-items:center;
+      padding:48px 20px;
+      background:linear-gradient(180deg,#8f6da6 0%, #cba0c9 100%);
+      color:#fff;
+      flex-wrap:wrap;
+    }
+    .hero-left{flex:1;min-width:280px}
+    .hero-sub{opacity:0.95;font-weight:500}
+    .hero h1{
+      font-size:42px;
+      margin:10px 0 18px;
+      line-height:1.1;
+    }
+    .hero p.lead{font-size:18px;opacity:0.95;margin-bottom:22px}
+    .hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+    .btn-ghost{
+      background:#fff;
+      color:#222;
+      padding:12px 20px;
+      border-radius:28px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .btn-dark{
+      background:rgba(0,0,0,0.85);
+      color:#fff;
+      padding:12px 20px;
+      border-radius:28px;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .hero-right{flex:1;min-width:260px;display:flex;justify-content:center}
+    .card-photo{
+      background:#fff;
+      padding:8px;
+      border-radius:14px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.12);
+      max-width:320px;
+    }
+    .card-photo img{display:block;width:100%;border-radius:10px}
+
+    /* SERVICES */
+    section.services{padding:48px 20px;background:#fff}
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:24px;
+    }
+    .service{
+      padding:18px;
+      border-radius:12px;
+      background:#fff;
+      border:1px solid #f0e9f2;
+      box-shadow:0 4px 14px rgba(165,110,166,0.06);
+      min-height:120px;
+    }
+    .service h4{margin-bottom:8px;color:#4a2a4a}
+
+    /* CONTACT */
+    .contact{padding:48px 20px;background:#f9f6fa;text-align:center}
+    .contact h2{margin-bottom:16px}
+    .contact p{margin-bottom:12px}
+    .contact a{display:inline-block;margin:6px 8px}
+
+    /* FOOTER */
+    footer{background:#2a2a2a;color:#ddd;padding:18px;text-align:center;font-size:14px}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <!-- ⬇️ LOGO (usa Logo.png con mayúscula L) -->
+      <img src="Logo.png" alt="Logo Grace Vásquez Psicóloga">
+      <div>
+        <strong>Grace Vásquez</strong>
+        <div class="tag">Psicóloga</div>
+      </div>
+    </div>
+    <div class="contact-cta">
+      <div class="phone">📞 996-2340 | 6215-5196</div>
+      <a href="#contacto" class="btn-primary">Agendar cita</a>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-sub">Psicología clínica</div>
+      <h1>Cuida tu salud mental,<br>es un acto de amor propio</h1>
+      <p class="lead">Atención psicológica virtual y presencial para adultos, adolescentes y parejas.  
+      Talleres, capacitaciones y certificaciones de salud mental.</p>
+      <div class="actions">
+        <a href="#servicios" class="btn-dark">Ver servicios</a>
+        <a href="#contacto" class="btn-ghost">Agendar cita</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="card-photo">
+        <!-- ⬇️ FOTO (usa Foto.png con mayúscula F) -->
+        <img src="Foto.png" alt="Psicóloga Grace Vásquez">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicios" class="services">
+    <h2 style="text-align:center">Servicios</h2>
+    <div class="services-grid">
+      <div class="service">
+        <h4>Atención presencial y virtual</h4>
+        <p>Sesiones de psicología tanto online como en consultorio.</p>
+      </div>
+      <div class="service">
+        <h4>Adultos, adolescentes y parejas</h4>
+        <p>Terapia adaptada a las necesidades de cada persona.</p>
+      </div>
+      <div class="service">
+        <h4>Certificado de salud mental</h4>
+        <p>Evaluaciones profesionales para fines laborales o académicos.</p>
+      </div>
+      <div class="service">
+        <h4>Talleres y capacitaciones</h4>
+        <p>Programas de bienestar emocional para grupos y empresas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="contact">
+    <h2>Agenda tu cita</h2>
+    <p>📍 Centro Médico Chitré, al lado de Econotules</p>
+    <p>☎️ 996-2340 | 6215-5196</p>
+    <a href="https://www.instagram.com/psicologa_gracevasquez" target="_blank" class="btn-primary">Instagram</a>
+    <a href="mailto:psicologa_gracevasquez@gmail.com" class="btn-ghost">Enviar correo</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Grace Vásquez - Psicóloga | Todos los derechos reservados
+  </footer>
+</body>
+</html>
